@@ -13,6 +13,7 @@
 		014F0EDB2463EFB20031C3F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014F0ED92463EFB20031C3F4 /* Main.storyboard */; };
 		014F0EDD2463EFB60031C3F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 014F0EDC2463EFB60031C3F4 /* Assets.xcassets */; };
 		014F0EE02463EFB60031C3F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 014F0EDE2463EFB60031C3F4 /* LaunchScreen.storyboard */; };
+		D02F2AE24BF8BA055D7294F0 /* Pods_add2appline.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1CA573A0902E8343BBB9D5 /* Pods_add2appline.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		014F0EDC2463EFB60031C3F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		014F0EDF2463EFB60031C3F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		014F0EE12463EFB60031C3F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BA2939E376301BD1126F210 /* Pods-add2appline.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-add2appline.release.xcconfig"; path = "Target Support Files/Pods-add2appline/Pods-add2appline.release.xcconfig"; sourceTree = "<group>"; };
+		4A1CA573A0902E8343BBB9D5 /* Pods_add2appline.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_add2appline.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F3209B4EAE75D708A3E0B34 /* Pods-add2appline.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-add2appline.debug.xcconfig"; path = "Target Support Files/Pods-add2appline/Pods-add2appline.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D02F2AE24BF8BA055D7294F0 /* Pods_add2appline.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				014F0ED22463EFB20031C3F4 /* add2appline */,
 				014F0ED12463EFB20031C3F4 /* Products */,
+				607B745F17BD323CF684E33F /* Pods */,
+				E43E3CE2FD52B8106610C3DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = add2appline;
 			sourceTree = "<group>";
 		};
+		607B745F17BD323CF684E33F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7F3209B4EAE75D708A3E0B34 /* Pods-add2appline.debug.xcconfig */,
+				2BA2939E376301BD1126F210 /* Pods-add2appline.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E43E3CE2FD52B8106610C3DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A1CA573A0902E8343BBB9D5 /* Pods_add2appline.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +99,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 014F0EE42463EFB60031C3F4 /* Build configuration list for PBXNativeTarget "add2appline" */;
 			buildPhases = (
+				537B7127F2E2992BD9C34B16 /* [CP] Check Pods Manifest.lock */,
+				B1E44B79DBF8B7EA79A37485 /* [CP-User] Run Flutter Build Script */,
 				014F0ECC2463EFB20031C3F4 /* Sources */,
 				014F0ECD2463EFB20031C3F4 /* Frameworks */,
 				014F0ECE2463EFB20031C3F4 /* Resources */,
+				3D8738A38527047EBE1B0C67 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +160,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3D8738A38527047EBE1B0C67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-add2appline/Pods-add2appline-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-add2appline/Pods-add2appline-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-add2appline/Pods-add2appline-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		537B7127F2E2992BD9C34B16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-add2appline-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E44B79DBF8B7EA79A37485 /* [CP-User] Run Flutter Build Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/./flutter_part/.metadata",
+				"${SRCROOT}/flutter_part/.ios/Flutter/App.framework/App",
+				"${SRCROOT}/flutter_part/.ios/Flutter/engine/Flutter.framework/Flutter",
+				"${SRCROOT}/flutter_part/.ios/Flutter/flutter_export_environment.sh",
+			);
+			name = "[CP-User] Run Flutter Build Script";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/flutter_part/.ios/Flutter/flutter_export_environment.sh\"\n\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		014F0ECC2463EFB20031C3F4 /* Sources */ = {
@@ -282,10 +368,13 @@
 		};
 		014F0EE52463EFB60031C3F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F3209B4EAE75D708A3E0B34 /* Pods-add2appline.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EAY39XTTE;
 				INFOPLIST_FILE = add2appline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -299,10 +388,13 @@
 		};
 		014F0EE62463EFB60031C3F4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BA2939E376301BD1126F210 /* Pods-add2appline.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5EAY39XTTE;
 				INFOPLIST_FILE = add2appline/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

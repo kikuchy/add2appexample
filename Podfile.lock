@@ -1,0 +1,37 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_part (0.0.1):
+    - Flutter
+  - FlutterPluginRegistrant (0.0.1):
+    - Flutter
+  - LineSDKSwift (5.5.2):
+    - LineSDKSwift/Core (= 5.5.2)
+  - LineSDKSwift/Core (5.5.2)
+
+DEPENDENCIES:
+  - Flutter (from `flutter_part/.ios/Flutter/engine`)
+  - flutter_part (from `flutter_part/.ios/Flutter`)
+  - FlutterPluginRegistrant (from `flutter_part/.ios/Flutter/FlutterPluginRegistrant`)
+  - LineSDKSwift (~> 5.5)
+
+SPEC REPOS:
+  trunk:
+    - LineSDKSwift
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: flutter_part/.ios/Flutter/engine
+  flutter_part:
+    :path: flutter_part/.ios/Flutter
+  FlutterPluginRegistrant:
+    :path: flutter_part/.ios/Flutter/FlutterPluginRegistrant
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_part: bfdd776a1f9eaf5c543578f9f851c899ac3efb1e
+  FlutterPluginRegistrant: d59dd07dd90e9c6430996073575a5bd1ea19677e
+  LineSDKSwift: 061ee1ba11072007a31026cf1c59b1fc4a3898d6
+
+PODFILE CHECKSUM: 0be7202d03be34e569bf2275885e55de27694c47
+
+COCOAPODS: 1.9.1
